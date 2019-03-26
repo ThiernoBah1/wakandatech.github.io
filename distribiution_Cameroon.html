@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Wakanda Technologies</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../fonts.googleapis.com/css-family=Montserrat-400,600.htm" rel="stylesheet">
+
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+
+  <link href="img/favicon.png.htm" rel="icon">
+  <link href="img/favicon.png.htm" rel="apple-touch-icon">
+  
+  <style type="text/css">
+.pacweather{
+	width:100%;
+}
+
+.pacmay{
+	display:none;
+}
+
+@media only screen and (max-width: 800px)
+.pacweather {{
+	
+	
+	}
+
+}
+</style>
+
+<style type="text/css">
+body{
+      background-color: white;
+}
+
+table td{
+    border: 1px #fff solid;
+    padding: 12px 17px;
+}
+
+	.clear{
+		clear:both;
+	}
+
+	.ray_left{
+	float:left;
+	width:65%;
+       padding:30px;
+      background-color: white;
+	}
+
+	.ray_right{
+		background-color: white;
+		float:right;
+		width:35%;
+             padding:30px;
+}
+		@media only screen and (max-width: 500px) {
+
+	.ray_left{
+	float:left;
+	width:100%;
+	padding:5px;
+	}
+
+	.ray_right{
+	float:left;
+	width:100%;
+	padding:5px;
+	}
+
+
+	}
+	</style>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+  hight: 50
+}
+.dropbtn2{
+  background-color: #053507;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+  hight: 50
+}
+.dropbtn3{
+  background-color: #d3d6c9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+  hight: 50
+}
+.dropbtn4{
+  background-color: #d3d6c9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 500px;
+  hight: 50
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+
+<body>
+  <!-- <div id="preloader"></div> -->
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-4 col-xs-6">
+          <div id="logo">
+            <div class="logo">
+              <a href="croatian.html">
+                <img src="img/file-7.png" alt="logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-9 col-sm-8 col-xs-6">
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active">
+                <a href="#novosti">News</a>
+              </li>
+              <li>
+                <a href="#onama">About us</a>
+              </li>
+              <li class="menu-has-children">
+                <a href="#">
+                  Distribution
+                </a>
+                <ul>
+                  <li>
+                    <a href="distribiution_Nigeria.html">
+                      <img style="width: 20%;" src="img/lang/nig.png" alt="english"/>&nbsp;&nbsp;Nigeria</a>
+                  </li>
+				  <li>
+                    <a href="distribiution_Guinea.html">
+                      <img style="width: 20%;" src="img/lang/gn.png" alt="turkish"/>&nbsp;&nbsp;Guinea</a>
+                  </li>
+                 
+                  <li>
+                    <a href="distribiution_Ghana.html">
+                      <img style="width: 20%;" src="img/lang/gha.png" alt="french"/>&nbsp;&nbsp;Ghana</a>
+                  </li>
+				  <li>
+                    <a href="distribiution_Cameroon.html">
+                      <img style="width: 20%;" src="img/lang/cma.png" alt="french"/>&nbsp;&nbsp;Cameroon</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.arcelik.com.tr/">Arcelik</a>
+              </li>
+              <li>
+                <a href="Certifications/certifications-eng.html">Certifications</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li class="menu-has-children">
+                <a href="javascript:void(0)">
+                  <img width="50px" src="img/lang/uk.png" alt="english"/>
+                </a>
+                <ul>
+                  <li>
+                    <a href="turkish.html">
+                      <img style="width: 20%;" src="img/lang/tr.png" alt="turkish"/>&nbsp;&nbsp;Turkish</a>
+                  </li>
+                 
+                  <li>
+                    <a href="javascript:void(0)">
+                      <img style="width: 20%;" src="img/lang/uk.png" alt="english"/>&nbsp;&nbsp;English</a>
+                  </li>
+                  <li>
+                    <a href="french.html">
+                      <img style="width: 20%;" src="img/lang/fr.png" alt="french"/>&nbsp;&nbsp;French</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- BANNER -->
+  <div id="banner1">
+    <div class="banner-container">
+      <div class="container">
+        <div class="row" style="padding-top: 10px;">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+            <!-- <img style="width: 80%;" src="img/xiaomi.png" alt="banner"/> -->
+
+            <img style="width: 75%; padding-top: 50px; opacity: 0.9;" src="img/slogan/Venkon_Slogan-8.png" alt="slogan" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <br>
+            <br>
+            <br>
+            <h3>Wakanda Technologies Service Centers in Cameroon</h3>
+            <br>
+            <!-- <a href="#distribucija" class="btn-distribucija">Distribucija</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END BANNER -->
+
+  <!-- DISTRIBUCIJA -->
+  <br><br>
+<div id="banner2">
+<div class="dropdown">
+  <button class="dropbtn">Logos</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn2">Abuja</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn3">Kanu</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn4">Sokoto</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Ibadan</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn2">Enugu</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn3">Kaduna</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn4">Port Harcort</button>
+  <div class="dropdown-content">
+    <div class="AccordionPanel">
+    <div class="AccordionPanelContent">
+	<table width="100%" border="1">
+    <tr style="background-color:#FFBE00">
+    <td>Service Centers</td>
+    <td>Address</td>
+    </tr>
+  <tr>
+    <td>MTN Service Center Ilorin</td>
+    <td>MTN Service Center, 24, Ahamadu Bello Way Ilorin</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Ilorin East</td>
+    <td>MTN Service Center, No 39 Murtala Mohammed Way Ilorin Kwara</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Kwara Mall</td>
+    <td>MTN Service Center, Beside Nta Office Fate</td>
+  </tr>
+  <tr>
+    <td>MTN Service Center Offa</td>
+    <td>MTN Service Center, 149, Olofa Way Or Old Phcn Office, Olofa Way Offa</td>
+  </tr>
+	</table>    
+    </div>
+  </div>
+  </div>
+</div>
+  <!-- END O KOMPANIJI -->
+  <br><br>
+
+  <!-- KONTAKT -->
+  <div id="contact">
+    <div class="contact-container">
+      <div class="container wow fadeInUp">
+
+        <div class="section-header">
+          <h3>
+            <span style="color: white;">Contact us!</span>
+          </h3>
+        </div>
+        <hr class="crtica">
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="fa fa-map-marker"></i>
+              <h3>Address</h3>
+              <address>56, Adeboyejo Stree, Off Adeshina Road, Ijeshatedo, Surulere, Lagos-Nigeria</address>
+			  <address>001, Conakry/Ratoma, Guinea</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="fa fa-phone"></i>
+              <h3>Info and sales</h3>
+              <p>+234-8033-3110-87</p>
+			  <p>+224-662-594-331</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="fa fa-envelope-o"></i>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:contact@venkon-technix.com">contact@wakandatechnologies.com</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <form id="contact-form" method="post" action="contact-2.php.htm" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name"><span style="color: white;">Name *</span></label>
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your name" required="required" data-error="Name is required!">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname"><span style="color: white;">Surname *</span></label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter your Surname" required="required" data-error="Surname is required!">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email"><span style="color: white;">E-mail *</span></label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your E-mail" required="required" data-error="E-mail is required!">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_phone"><span style="color: white;">Telephone</span></label>
+                          <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Enter your phone number">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message"><span style="color: white;">Message *</span></label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Write us something..." rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12" style="padding-top: 10px; text-align: center;">
+                      <input type="submit" class="btn btn-success btn-send" value="Send">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12" style="text-align: right; font-size: 12px; padding-top: 10px;">
+                      <p class="text-muted"><span style="color: white;"><strong>*</strong> Required Fields</span></p>
+                  </div>
+              </div>
+          </div>
+
+      </form>
+
+      </div>
+    </div>
+  </div>
+  <!-- END KONTAKT -->
+
+  <!-- BACK TO TOP -->
+  <a href="index.htm#" class="back-to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <!-- END BACK TO TOP -->
+
+  <!-- JS -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="lib/lightbox/lightbox.js"></script>
+
+  <script src="../code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="validator.js"></script>
+  <script src="contact-2.js"></script>
+  <!-- END JS -->
+
+</body>
+
+</html>
